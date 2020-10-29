@@ -1,0 +1,36 @@
+header {
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+	background: #fff;
+}
+
+header span {
+	padding-left: 0.8rem;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 8rem);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container img {
+	display: block;
+	margin-right: 3.5rem;
+}

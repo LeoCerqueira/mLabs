@@ -1,0 +1,21 @@
+.btn {
+	width: 18.4rem;
+	height: 4.5rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.btn.btn-orange {
+	background: #f2994a;
+	border: 1px solid #e0812c;
+	margin-top: 8rem;
+	transition: 0.2s;
+}
+
+.btn.btn-orange a {
+	color: #fff;
+}
+
+.btn.btn-orange:hover {
+	background: #d87723;
+}

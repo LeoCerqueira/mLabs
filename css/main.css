@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: rgb(0, 0, 0);
+	background: #e5e5e5;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body,
+input,
+button,
+textarea {
+	font: 500 1.8rem/1 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
