@@ -1,12 +1,109 @@
 .form-field {
 	background: #ffffff;
-	border: 1px solid #e0e0e0;
+	border: 0.1rem solid #d8d8d8;
 	box-sizing: border-box;
-	border-radius: 4px;
+	border-radius: 0.5rem;
+}
+
+legend {
+	padding: 0.8rem 1rem;
+	color: #333333;
+}
+
+.fieldset {
+	display: grid;
+	grid-template-rows: 14vh 22vh 30vh;
+	grid-row-gap: 3rem;
 }
 
 .row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 4rem;
+	grid-column-gap: 3rem;
+}
+
+hr {
+	border: 0.1rem solid #e0e0e0;
+}
+
+.sotial-midia-logo {
+	display: flex;
+	justify-content: space-around;
+	height: calc(100% - 3.6rem);
+	align-content: center;
+}
+
+.date-time {
+	display: flex;
+	justify-content: space-around;
+	height: calc(100% - 3.6rem);
+}
+
+#date,
+#time {
+	border: 0.1rem solid #d8d8d8;
+	color: #828282;
+	padding: 0.5rem;
+	margin: 5%;
+}
+
+.textarea {
+	display: flex;
+	justify-content: center;
+	height: calc(100% - 3.6rem);
+	align-items: center;
+}
+
+textarea {
+	height: calc(100% - 2.6rem);
+	width: calc(100% - 2.6rem);
+
+	resize: none;
+	border: 0.1rem solid #949494;
+
+	padding: 1rem;
+	border-radius: 0.4rem;
+}
+
+.img-upload {
+	display: flex;
+	justify-content: center;
+}
+
+.img-upload p {
+	color: #828282;
+}
+
+.border-box {
+	height: calc(100% - 3.6rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-upload {
+	height: calc(100% - 2.6rem);
+	width: calc(100% - 2.6rem);
+	border: 0.1rem dashed #bdbdbd;
+	border-radius: 0.5rem;
+}
+
+.image-upload {
+	display: flex;
+	flex-direction: column;
+	padding: 1.6rem 0;
+}
+.image-upload img,
+.image-upload p,
+.image-upload button {
+	flex: 1;
+}
+
+.image-upload img {
+	width: 4.5rem;
+	height: auto;
+	align-self: center;
+}
+.image-upload button {
+	align-self: center;
 }

@@ -46,68 +46,110 @@
 			<div class="container-main">
 				<section>
 					<form action="">
-						<fieldset>
+						<div class="fieldset">
 							<div class="row">
 								<div class="sotial-midia form-field">
-                                    <p>Redes sociais</p>
-                                    <hr>
-                                    <div class="sotial-midia-logo">
-                                        <img src="./images/instawhite.svg" alt="Instagram">
-                                        <img src="./images/linkedinwhite.svg" alt="Linkedin">
-                                        <img src="./images/youtubegray.svg" alt="Youtube">
-                                        <img src="./images/pinterestgray.svg" alt="Pinterest">
-                                        <img src="./images/twitergray.svg" alt="Twiter">
-                                        <img src="./images/facebookgray.svg" alt="Facebook">
+									<div>
+										<legend>Redes sociais</legend>
+										<hr />
+									</div>
 
-                                    </div>
+									<div class="sotial-midia-logo">
+										<img
+											src="./images/Button Instagram - Default.svg"
+											alt="Instagram"
+										/>
+										<img
+											src="./images/Button Linkedin - Default.svg"
+											alt="Linkedin"
+										/>
+										<img
+											src="./images/Icon - Youtube.svg"
+											alt="Youtube"
+										/>
+										<img
+											src="./images/Icon - Pinterest.svg"
+											alt="Pinterest"
+										/>
+										<img
+											src="./images/Icon - Twitter.svg"
+											alt="Twiter"
+										/>
+										<img
+											src="./images/Icon - Facebook.svg"
+											alt="Facebook"
+										/>
+									</div>
 								</div>
 								<div class="posting-date form-field">
-									<label for="date-time"
-										>Data de publicação</label
-									>
-									<input
-										type="date"
-										name="date-time"
-										id="date"
-									/>
-									<input
-										type="time"
-										name="date-time"
-										id="time"
-									/>
+									<div>
+										<legend for="date-time">
+											Data de publicação
+										</legend>
+										<hr />
+									</div>
+
+									<div class="date-time">
+										<input
+											type="date"
+											name="date-time"
+											id="date"
+										/>
+										<input
+											type="time"
+											name="date-time"
+											id="time"
+										/>
+									</div>
 								</div>
 							</div>
 
 							<div class="text form-field">
-								<label for="textarea">Texto do post</label>
-								<textarea
-									name="textarea"
-									id="textarea"
-									cols="30"
-									rows="10"
-									placeholder="Aqui vai o texto descritivo desse post"
-								></textarea>
-							</div>
-							<div class="image-upload form-field">
-								Upload de imagem
-								<div class="image-upload">
-									<img
-										src="./images/imageupload.svg"
-										alt="Upload de Imagem"
-									/>
-									<p>
-										Arraste e solte uma imagem aqui ou
-										clique no botão abaixo
-									</p>
-									<button>Pesquisar imagens</button>
+								<div>
+									<legend for="textarea">
+										Texto do post
+									</legend>
+									<hr />
+									
+								</div>
+								<div class="textarea">
+									<textarea
+										name="textarea"
+										id="textarea"
+										placeholder="Aqui vai o texto descritivo desse post"
+									></textarea>
 								</div>
 							</div>
-						</fieldset>
+							<div class="image-upload form-field">
+								<div>
+									<legend>Upload de imagem</legend>
+
+									<hr />
+								</div>
+
+								<div class="border-box">
+									<div class="img-upload">
+										<div class="image-upload">
+											<img
+												src="./images/imageupload.svg"
+												alt="Upload de Imagem"
+											/>
+											<p>
+												Arraste e solte uma imagem aqui
+												ou clique no botão abaixo
+											</p>
+											<button class="btn btn-blueWhite slim">Pesquisar imagens</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</form>
 				</section>
 				<section>
 					<div class="post-view form-field">
-						Visualização do post
+						<legend>Visualização do post</legend>
+						<br />
 						<hr />
 						<p>
 							Aguardando conteudo. Ifrome os canais e as mídias

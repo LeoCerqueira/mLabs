@@ -11,7 +11,7 @@
 
 .btn.btn-orange {
 	background: #f2994a;
-	border: 1px solid #e0812c;
+	border: 0.1rem solid #e0812c;
 	margin-top: 8rem;
 	transition: 0.2s;
 }
@@ -22,4 +22,20 @@
 
 .btn.btn-orange:hover {
 	background: #d87723;
+}
+
+/* Blue border and white backgounrd button */
+
+.btn.btn-blueWhite {
+	background: #ffffff;
+	border: 1px solid #2f80ed;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: center;
+	color: #2f80ed;
+}
+
+.btn.btn-blueWhite.slim {
+	height: 3.6rem !important;
+	width: 18rem !important;
 }
