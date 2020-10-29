@@ -1,9 +1,13 @@
+/* Buttons */
+
 .btn {
 	width: 18.4rem;
 	height: 4.5rem;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
+
+/* Orange Button */
 
 .btn.btn-orange {
 	background: #f2994a;

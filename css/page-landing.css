@@ -1,8 +1,10 @@
 header {
 	height: 8rem;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	padding: 4rem;
 	background: #fff;
 }
@@ -17,10 +19,11 @@ header span {
 }
 
 main {
+	height: calc(100vh - 8rem);
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 8rem);
 }
 
 .container {
@@ -32,6 +35,5 @@ main {
 
 .container img {
 	height: 50vh;
-
 	margin-right: 3rem;
 }

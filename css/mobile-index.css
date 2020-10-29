@@ -1,0 +1,17 @@
+body header .menu-header {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	body header > img {
+		display: none;
+	}
+
+	body header span {
+		display: none;
+	}
+
+	body header .menu-header {
+		display: block;
+	}
+}
