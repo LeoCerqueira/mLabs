@@ -31,6 +31,7 @@ main {
 }
 
 .container img {
-	display: block;
-	margin-right: 3.5rem;
+	height: 50vh;
+
+	margin-right: 3rem;
 }
