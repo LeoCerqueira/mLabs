@@ -1,0 +1,21 @@
+main {
+	/* main heigth = total screen heigth - (header heigth + footer heigth) */
+	height: calc(100vh - (8rem + 10.7rem));
+	position: relative;
+}
+
+.container-main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 4rem;
+	margin: 4rem;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	height: 6.7rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
