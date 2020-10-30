@@ -15,8 +15,14 @@ main {
 	margin-bottom: 1.6rem;
 }
 
-table {
+.scrollBox {
 	width: 90%;
+
+	overflow-x: scroll;
+}
+
+table {
+	width: 100%;
 	height: auto;
 	border-collapse: collapse;
 }

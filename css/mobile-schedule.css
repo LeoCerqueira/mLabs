@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+	.scrollBox {
+		display: block;
+		width: 80%;
+
+		overflow-x: scroll;
+	}
+
+	table {
+		width: 130rem;
+		align-self: flex-start;
+	}
+}

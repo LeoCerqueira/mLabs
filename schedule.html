@@ -21,10 +21,12 @@
 		<title>mLabs</title>
 
 		<link rel="icon" href="/images/mlabs-icon.png" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/page-schedule.css">
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/page-schedule.css" />
 		<link rel="stylesheet" href="./css/mobile-header.css" />
 		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/page-schedule.css" />
+		<link rel="stylesheet" href="./css/mobile-schedule.css" />
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -33,37 +35,59 @@
 	</head>
 	<body>
 		<header>
-			<img src="./images/mlabs-color-2 1.svg" alt="mLabs" />
-			<img class="menu-header" src="./images/menu.svg" alt="Menu" />
+			<a href="./index.html"><img src="./images/mlabs-color-2 1.svg" alt="mLabs" /></a>
+			<a href="./index.html"></a><img class="menu-header" src="./images/menu.svg" alt="Menu" /></a>
 			<div class="user">
 				<img src="./images/Ellipse 1.svg" alt="User" />
 				<span>Léo Cerqueira</span>
 			</div>
 		</header>
 		<main>
-            <p class="title">Listagem de agendamento</p>
-            
-			<table>
-				<tbody>
-					<tr class="shadow">
-						<th>Redes sociais</th>
-						<th>Mídia</th>
-						<th>Texto</th>
-						<th>Data <img src="./images/arrow.svg" alt="Data"></th>
-						<th>Ações</th>
-						<th>Status</th>
-                    </tr>
-                    <br>
-					<tr>
-						<td><img src="./images/Button Instagram.svg" alt="Instagram"></td>
-						<td><img class="post" src="./images/image table.svg" alt="Post image"></td>
-						<td><p>Aqui vai o texto descritivo desse post</p></td>
-						<td>02/02/1991 às 14:45h</td>
-						<td><a href="">Prview</a></td>
-						<td><img src="./images/agendado circle.svg" alt="Agendado"> Agendado</td>
-					</tr>
-				</tbody>
-			</table>
+			<p class="title">Listagem de agendamento</p>
+			<div class="scrollBox">
+				<table>
+					<tbody>
+						<tr class="shadow">
+							<th>Redes sociais</th>
+							<th>Mídia</th>
+							<th>Texto</th>
+							<th>
+								Data <img src="./images/arrow.svg" alt="Data" />
+							</th>
+							<th>Ações</th>
+							<th>Status</th>
+						</tr>
+						<br />
+						<tr>
+							<td>
+								<img
+									src="./images/Button Instagram.svg"
+									alt="Instagram"
+								/>
+							</td>
+							<td>
+								<img
+									class="post"
+									src="./images/image table.svg"
+									alt="Post image"
+								/>
+							</td>
+							<td>
+								<p>Aqui vai o texto descritivo desse post</p>
+							</td>
+							<td>02/02/1991 às 14:45h</td>
+							<td><a href="">Prview</a></td>
+							<td>
+								<img
+									src="./images/agendado circle.svg"
+									alt="Agendado"
+								/>
+								Agendado
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</main>
 	</body>
 </html>
