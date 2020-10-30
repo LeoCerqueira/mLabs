@@ -20,7 +20,7 @@
 	background: #f2994a;
 	border: 0.1rem solid #e0812c;
 	margin-top: 8rem;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 
 .btn.btn-orange a {
@@ -87,4 +87,58 @@
 
 .noBorder-blue a {
 	color: #2f80ed;
+}
+
+/*  Scheduling.html - Button linkedin/intagran > hover/click  > animation */
+
+.button-in-pressed {
+	display: none;
+}
+
+.button-in-hovered {
+	position: absolute;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.button-insta-pressed {
+	display: none;
+}
+
+.button-insta-hovered {
+	position: absolute;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.button-insta-default {
+	transition: opacity 0.3s;
+}
+
+.button-in-default {
+	transition: opacity 0.3s;
+}
+
+.insta-hover,
+.in-hover {
+	display: flex;
+	align-items: center;
+}
+
+.insta-hover:hover .button-insta-hovered {
+	opacity: 1;
+}
+
+.insta-hover:hover .button-insta-default {
+	opacity: 0;
+}
+
+.in-hover:hover .button-in-hovered {
+	opacity: 1;
+}
+
+.in-hover:hover .button-in-default {
+	opacity: 0;
 }

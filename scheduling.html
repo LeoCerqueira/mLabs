@@ -57,14 +57,27 @@
 									</div>
 
 									<div class="sotial-midia-logo">
-										<img
+
+									<div class="insta-hover" id="insta-button" onclick="changeImg();">
+										<img id="instaImg1"class="button-insta-default"
+											
 											src="./images/Button Instagram - Default.svg"
 											alt="Instagram"
 										/>
-										<img
+										<img id="instaImg2"class="button-insta-hovered" src="./images/Button Instagram - Hovered.svg" alt="Instagram">
+										<img id="instaImg3" class="button-insta-pressed" src="./images/Button Instagram - Pressed.svg" alt="Instagram">
+									</div>
+									<div class="in-hover" onclick="changeImg_1();">
+
+										<img id="inImg1"class="button-in-default"
 											src="./images/Button Linkedin - Default.svg"
 											alt="Linkedin"
 										/>
+
+										<img id="inImg2" class="button-in-hovered" src="./images/Button Linkedin - Hovered.svg" alt="Linkedin">
+										<img id="inImg3" class="button-in-pressed" src="./images/Button Linkedin - Pressed.svg" alt="Linkedin">
+									</div>
+
 										<img
 											src="./images/Icon - Youtube.svg"
 											alt="Youtube"
@@ -177,5 +190,6 @@
 			<button class="btn btn-blueGray"><a href="">Salvar Rascunho</a> </button>
 			<button class="btn btn-blue"><a href="">Agendar</a> </button>
 		</footer>
+		<script src="./scripts/btn.js"></script>
 	</body>
 </html>
