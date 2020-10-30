@@ -133,3 +133,7 @@ textarea {
 	flex-direction: column;
 	text-align: center;
 }
+
+form .btn.btn-orange {
+	display: none;
+}

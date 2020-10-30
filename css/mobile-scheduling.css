@@ -36,4 +36,27 @@
 		height: 11rem;
 		margin-bottom: 1.1rem;
 	}
+
+	.image-upload {
+		height: 16rem;
+	}
+
+	.image-upload img,
+	.image-upload p {
+		display: none;
+	}
+
+	form .btn.btn-orange {
+		display: block;
+		width: 100%;
+		margin-top: 2.6rem;
+	}
+
+	footer .btn.btn-blue {
+		margin-right: 1.5rem;
+	}
+
+	footer .btn.btn-blue {
+		padding: 1.5rem;
+	}
 }
