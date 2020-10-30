@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+	main {
+		height: unset;
+	}
+
+	.container-main {
+		display: grid;
+		grid-template-columns: unset;
+		grid-column-gap: unset;
+		margin: 1.5rem;
+	}
+
+	#section2 {
+		display: none;
+	}
+
+	#section1 {
+	}
+
+	.row {
+		display: block;
+	}
+
+	.fieldset {
+		display: grid;
+		grid-template-rows: 22rem 17rem 15rem;
+		grid-row-gap: 2.6rem;
+	}
+
+	.sotial-midia {
+		height: 11rem;
+		margin-bottom: 1.1rem;
+	}
+
+	.posting-date {
+		height: 11rem;
+		margin-bottom: 1.1rem;
+	}
+}

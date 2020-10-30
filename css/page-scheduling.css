@@ -10,12 +10,3 @@ main {
 	grid-column-gap: 4rem;
 	margin: 4rem;
 }
-
-footer {
-	position: relative;
-	bottom: 0;
-	height: 6.7rem;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}

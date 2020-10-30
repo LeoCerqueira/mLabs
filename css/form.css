@@ -16,6 +16,8 @@ legend {
 	grid-row-gap: 3rem;
 }
 
+/* Sotial midia and time */
+
 .row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -47,6 +49,8 @@ hr {
 	margin: 5%;
 }
 
+/* Text area */
+
 .textarea {
 	display: flex;
 	justify-content: center;
@@ -73,6 +77,8 @@ textarea {
 .img-upload p {
 	color: #828282;
 }
+
+/* Img upload */
 
 .border-box {
 	height: calc(100% - 3.6rem);
@@ -106,4 +112,24 @@ textarea {
 }
 .image-upload button {
 	align-self: center;
+}
+
+/* Preview section */
+
+.post-view,
+.preview-box {
+	height: 100%;
+}
+
+.post-view p {
+	color: #828282;
+	margin-bottom: 4rem;
+}
+
+.preview-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }

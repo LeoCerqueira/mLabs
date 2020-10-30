@@ -1,0 +1,52 @@
+main {
+	height: calc(100vh - 8rem);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: #4f4f4f;
+}
+
+.title {
+	justify-self: left;
+	width: 89%;
+	margin-bottom: 1.6rem;
+}
+
+table {
+	width: 90%;
+	height: auto;
+	border-collapse: collapse;
+}
+
+table,
+tr,
+td,
+th {
+	border: 0.3rem solid #bdbdbd;
+	text-align: center;
+}
+
+table th {
+	background: #fff;
+	height: 6.5rem;
+}
+
+table tr {
+	background-color: #f2f2f2;
+}
+
+table td {
+	height: 7rem;
+}
+
+table img.post {
+	height: 71.3%;
+}
+
+table td a {
+	color: #1661f3;
+	text-decoration: underline;
+}

@@ -7,6 +7,13 @@
 	border-radius: 4px;
 }
 
+.btn-slim {
+	width: 18.4rem;
+	max-height: 3.6rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
 /* Orange Button */
 
 .btn.btn-orange {
@@ -24,9 +31,28 @@
 	background: #d87723;
 }
 
+/* Blue button */
+
+.btn.btn-blue {
+	background: #2f80ed;
+	border: 0.1rem solid #2f80ed;
+
+	transition: 0.2s;
+	margin-right: 4rem;
+	margin-left: 1.6rem;
+}
+
+.btn.btn-blue a {
+	color: #fff;
+}
+
+.btn.btn-blue:hover {
+	background: #1d72e2;
+}
+
 /* Blue border and white backgounrd button */
 
-.btn.btn-blueWhite {
+.btn-blueWhite {
 	background: #ffffff;
 	border: 1px solid #2f80ed;
 	box-sizing: border-box;
@@ -35,7 +61,30 @@
 	color: #2f80ed;
 }
 
-.btn.btn-blueWhite.slim {
-	height: 3.6rem !important;
-	width: 18rem !important;
+/* Blue border and gray backgounrd button */
+
+.btn-blueGray {
+	background: #e5e5e5;
+	border: 1px solid #2f80ed;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.btn-blueGray a {
+	color: #2f80ed;
+}
+
+/* No border blue button */
+
+.noBorder-blue {
+	background: #e5e5e5;
+	border: none;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 1.6rem;
+}
+
+.noBorder-blue a {
+	color: #2f80ed;
 }

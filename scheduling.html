@@ -6,7 +6,7 @@
 
 		<meta
 			name="decription"
-			content="Estapágina usuário agendar uma publicação 
+			content="Esta página usuário agendar uma publicação 
                                              em algumas redes sociais, além de permitir 
                                              que ele possa visualizar uma lista com os 
                                              agendamentos por status de publicação."
@@ -27,6 +27,8 @@
 		<link rel="stylesheet" href="./css/mobile-header.css" />
 		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/form.css" />
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/mobile-scheduling.css">
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -44,7 +46,7 @@
 		</header>
 		<main>
 			<div class="container-main">
-				<section>
+				<section id = "section1">
 					<form action="">
 						<div class="fieldset">
 							<div class="row">
@@ -103,14 +105,12 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="text form-field">
 								<div>
 									<legend for="textarea">
 										Texto do post
 									</legend>
 									<hr />
-									
 								</div>
 								<div class="textarea">
 									<textarea
@@ -138,7 +138,11 @@
 												Arraste e solte uma imagem aqui
 												ou clique no botão abaixo
 											</p>
-											<button class="btn btn-blueWhite slim">Pesquisar imagens</button>
+											<button
+												class="btn-slim btn-blueWhite"
+											>
+												Pesquisar imagens
+											</button>
 										</div>
 									</div>
 								</div>
@@ -146,27 +150,31 @@
 						</div>
 					</form>
 				</section>
-				<section>
+				<section id="section2">
 					<div class="post-view form-field">
-						<legend>Visualização do post</legend>
-						<br />
-						<hr />
-						<p>
-							Aguardando conteudo. Ifrome os canais e as mídias
-							desejadas para visualização.
-						</p>
-						<img
-							src="/images/post-preview.svg"
-							alt="Vizualização do post"
-						/>
+						<div>
+							<legend>Visualização do post</legend>
+
+							<hr />
+						</div>
+						<div class="preview-box">
+							<p>
+								Aguardando conteudo. Ifrome os canais e as
+								mídias desejadas para visualização.
+							</p>
+							<img
+								src="/images/post-preview.svg"
+								alt="Vizualização do post"
+							/>
+						</div>
 					</div>
 				</section>
 			</div>
 		</main>
 		<footer>
-			<button>Cancelar</button>
-			<button>Salvar Rascunho</button>
-			<button>Agendar</button>
+			<button class="noBorder-blue"><a href="./index.html">Cancelar</a> </button>
+			<button class="btn btn-blueGray"><a href="">Salvar Rascunho</a> </button>
+			<button class="btn btn-blue"><a href="">Agendar</a> </button>
 		</footer>
 	</body>
 </html>
