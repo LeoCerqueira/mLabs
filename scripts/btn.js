@@ -102,6 +102,10 @@ function showPreview() {
 	document.getElementById('section2').style.display = 'block';
 	document.getElementById('section2').style.position = 'fixed';
 	document.getElementById('section2').style.width = '92%';
+	document.getElementById('preview-box').style.background = '#e5e5e5';
+	document.getElementById('form-field').style.border = 'none';
+
+
 
 	document.getElementById('section1').style.display = 'none';
 	document.getElementById('footer').style.display = 'none';
