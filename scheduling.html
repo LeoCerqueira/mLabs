@@ -27,8 +27,8 @@
 		<link rel="stylesheet" href="./css/mobile-header.css" />
 		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/form-scheduling.css" />
-		<link rel="stylesheet" href="./css/footer.css">
-		<link rel="stylesheet" href="./css/mobile-scheduling.css">
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/mobile-scheduling.css" />
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -37,8 +37,12 @@
 	</head>
 	<body>
 		<header>
-			<a href="./index.html"><img src="./images/mlabs-color-2 1.svg" alt="mLabs" /></a>
-			<a href="./index.html"></a><img class="menu-header" src="./images/menu.svg" alt="Menu" /></a>
+			<a href="./index.html"
+				><img src="./images/mlabs-color-2 1.svg" alt="mLabs"
+			/></a>
+			<a href="./index.html"
+				><img class="menu-header" src="./images/menu.svg" alt="Menu"
+			/></a>
 			<div class="user">
 				<img src="./images/Ellipse 1.svg" alt="User" />
 				<span>Léo Cerqueira</span>
@@ -46,7 +50,7 @@
 		</header>
 		<main>
 			<div class="container-main">
-				<section id = "section1">
+				<section id="section1">
 					<form action="">
 						<div class="fieldset">
 							<div class="row">
@@ -57,26 +61,54 @@
 									</div>
 
 									<div class="sotial-midia-logo">
+										<div
+											class="insta-hover"
+											id="insta-button"
+											onclick="changeImg();"
+										>
+											<img
+												id="instaImg1"
+												class="button-insta-default"
+												src="./images/Button Instagram - Default.svg"
+												alt="Instagram"
+											/>
+											<img
+												id="instaImg2"
+												class="button-insta-hovered"
+												src="./images/Button Instagram - Hovered.svg"
+												alt="Instagram"
+											/>
+											<img
+												id="instaImg3"
+												class="button-insta-pressed"
+												src="./images/Button Instagram - Pressed.svg"
+												alt="Instagram"
+											/>
+										</div>
+										<div
+											class="in-hover"
+											onclick="changeImg_1();"
+										>
+											<img
+												id="inImg1"
+												class="button-in-default"
+												src="./images/Button Linkedin - Default.svg"
+												alt="Linkedin"
+											/>
 
-									<div class="insta-hover" id="insta-button" onclick="changeImg();">
-										<img id="instaImg1"class="button-insta-default"
-											
-											src="./images/Button Instagram - Default.svg"
-											alt="Instagram"
-										/>
-										<img id="instaImg2"class="button-insta-hovered" src="./images/Button Instagram - Hovered.svg" alt="Instagram">
-										<img id="instaImg3" class="button-insta-pressed" src="./images/Button Instagram - Pressed.svg" alt="Instagram">
-									</div>
-									<div class="in-hover" onclick="changeImg_1();">
-
-										<img id="inImg1"class="button-in-default"
-											src="./images/Button Linkedin - Default.svg"
-											alt="Linkedin"
-										/>
-
-										<img id="inImg2" class="button-in-hovered" src="./images/Button Linkedin - Hovered.svg" alt="Linkedin">
-										<img id="inImg3" class="button-in-pressed" src="./images/Button Linkedin - Pressed.svg" alt="Linkedin">
-									</div>
+											<img
+												id="inImg2"
+												class="button-in-hovered"
+												src="./images/Button Linkedin - Hovered.svg"
+												alt="Linkedin"
+											/>
+											<img
+												id="inImg3"
+												class="button-in-pressed"
+												src="./images/Button Linkedin - Pressed.svg"
+												alt="Linkedin"
+											/>
+										</div>
 
 										<img
 											src="./images/Icon - Youtube.svg"
@@ -127,6 +159,7 @@
 								</div>
 								<div class="textarea">
 									<textarea
+										onchange="getText();"
 										name="textarea"
 										id="textarea"
 										placeholder="Aqui vai o texto descritivo desse post"
@@ -151,17 +184,28 @@
 												Arraste e solte uma imagem aqui
 												ou clique no botão abaixo
 											</p>
-											<button
+											<!-- <button
 												class="btn-slim btn-blueWhite"
 											>
 												Pesquisar imagens
-											</button>
+											</button> -->
+											<label
+												class="btn-slim btn-blueWhite"
+												for="file-select"
+												>Pesquisar imagens</label
+											>
+											<input
+												id="file-select"
+												type="file"
+											/>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<button class="btn btn-orange"><a href="">Vizualizar post</a></button>
+						<button class="btn btn-orange">
+							<a href="">Vizualizar post</a>
+						</button>
 					</form>
 				</section>
 				<section id="section2">
@@ -172,24 +216,106 @@
 							<hr />
 						</div>
 						<div class="preview-box">
-							<p>
-								Aguardando conteudo. Ifrome os canais e as
-								mídias desejadas para visualização.
-							</p>
-							<img
-								src="/images/post-preview.svg"
-								alt="Vizualização do post"
-							/>
+							<!-- Card instagram -->
+							 <div id="post-preview" class="post-preview">
+								<div class="insta-preview">
+									<div class="preview-header">
+										<img
+											src="./images/Instagram Logo Post.svg"
+											alt="Instagram"
+										/><span>Léo Cerqueira</span>
+									</div>
+									<div class="preview-main">
+										<img
+											id="prevImg"
+											src="./images/post-preview.svg"
+											alt="Imagem do post"
+										/>
+									</div>
+									<div class="preview-footer">
+										<div>
+											<div>
+												<img src="./images/heart.svg" alt="Like" />
+												<img src="./images/comment.svg" alt="Cometário" />
+											</div>
+											<img src="./images/bookmark.svg" alt="Bookmark" />
+										</div>
+										<p id="txt-desc-insta">
+											Aqui vai o texto descritivo desse
+											post
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card Linkedin -->
+
+							<div id="post-preview-in" class="post-preview-in">
+								<div class="in-preview">
+									<div class="preview-header">
+										<img
+											src="./images/Linkedin Logo Post.svg"
+											alt="Instagram"
+										/><span>Léo Cerqueira</span>
+									</div>
+									<p id="txt-desc-insta" class="in">
+										Aqui vai o texto descritivo desse post
+									</p>
+									<div class="preview-main">
+										<img											
+											src="./images/post-preview.svg"
+											alt="Imagem do post"
+										/>
+									</div>
+									<div class="preview-footer">
+										<p>10 comentários</p>
+										<hr />
+										<div>
+											<img
+												src="./images/legal.svg"
+												alt="Like"
+											/>
+											<img
+												src="./images/balao.svg"
+												alt="Cometário"
+											/>
+
+											<img
+												src="./images/voltar.svg"
+												alt="Foward"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Card dafault -->
+ 							<div id="waiting" class="waiting">
+								<p>
+									Aguardando conteudo. Ifrome os canais e as
+									mídias desejadas para visualização.
+								</p>
+								<img
+									src="/images/post-preview.svg"
+									alt="Vizualização do post"
+								/>
+							</div> 
 						</div>
 					</div>
 				</section>
 			</div>
 		</main>
 		<footer>
-			<button class="noBorder-blue"><a href="./index.html">Cancelar</a> </button>
-			<button class="btn btn-blueGray"><a href="">Salvar Rascunho</a> </button>
-			<button class="btn btn-blue"><a href="">Agendar</a> </button>
+			<button class="noBorder-blue">
+				<a href="./index.html">Cancelar</a>
+			</button>
+			<button class="btn btn-blueGray">
+				<a href="">Salvar Rascunho</a>
+			</button>
+			<button type="submit" class="btn btn-blue">
+				<a href="">Agendar</a>
+			</button>
 		</footer>
 		<script src="./scripts/btn.js"></script>
+		<script src="./scripts/post-preview.js"></script>
 	</body>
 </html>

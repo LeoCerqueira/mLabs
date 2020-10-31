@@ -100,8 +100,7 @@ textarea {
 	padding: 1.6rem 0;
 }
 .image-upload img,
-.image-upload p,
-.image-upload button {
+.image-upload p {
 	flex: 1;
 }
 
@@ -110,8 +109,16 @@ textarea {
 	height: auto;
 	align-self: center;
 }
-.image-upload button {
+.image-upload label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3.6rem;
 	align-self: center;
+}
+
+.image-upload input {
+	display: none;
 }
 
 /* Preview section */
@@ -123,7 +130,7 @@ textarea {
 
 .post-view p {
 	color: #828282;
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 }
 
 .preview-box {
@@ -134,6 +141,121 @@ textarea {
 	text-align: center;
 }
 
+.post-preview,
+.post-preview-in {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.insta-preview,
+.in-preview {
+	width: 36.8rem;
+	min-height: 53.5rem;
+	border: 1px solid #bdbdbd;
+
+	border-radius: 4px;
+}
+
+.in-preview .preview-header {
+	display: flex;
+
+	justify-content: left;
+	height: 6.2rem;
+	padding: 1rem;
+}
+
+.insta-preview .preview-header {
+	display: flex;
+
+	justify-content: left;
+	height: 8.2rem;
+	padding: 1rem;
+}
+
+.in-preview .preview-header img {
+	margin-left: 1rem;
+}
+
+.insta-preview .preview-header img {
+	margin-top: -2rem;
+}
+
+.in-preview .preview-header span {
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+}
+
+.insta-preview .preview-header span {
+	margin-left: 2rem;
+	margin-top: 1.5rem;
+}
+
+.insta-preview .preview-main {
+	height: 36.8rem;
+}
+
+.insta-preview .preview-footer {
+	height: 8.5rem;
+}
+
+.in-preview .preview-footer {
+	height: 5.5rem;
+}
+
+.in-preview .preview-footer p {
+	font-weight: 400;
+	font-size: 1.2rem;
+	align-self: center;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.in-preview .preview-footer p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	text-align: initial;
+}
+
+.in-preview .preview-footer > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 0 1rem;
+	height: 4rem;
+}
+
+.insta-preview .preview-footer > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.in-preview .preview-footer img {
+	padding: 0 1.5rem 0 0;
+}
+
+.insta-preview .preview-footer img {
+	padding: 0 1rem;
+}
+
+#txt-desc-insta {
+	color: #4f4f4f;
+}
+
 form .btn.btn-orange {
+	display: none;
+}
+
+.post-preview {
+	display: none;
+}
+
+.post-preview-in {
 	display: none;
 }
