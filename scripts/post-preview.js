@@ -9,19 +9,21 @@ function getText() {
 
 	var text = document.getElementById('textarea').value;
 
+	var comment = JSON.stringify(text);
+	sessionStorage.setItem('comentario', comment);
+
+
 	if (text != '') {
 		descriptionInsta = '<p>' + text + '</p>';
 		descriptionIn = '<p>' + text + '</p>';
 		document.getElementById('txt-desc-insta').innerHTML = descriptionInsta;
 		document.getElementById('txt-desc-in').innerHTML = descriptionIn;
-
 	} else if (text == '') {
 		descriptionIn = '<p>Aqui vai o texto descritivo desse post</p>';
 		descriptionInsta = '<p>Aqui vai o texto descritivo desse post</p>';
 
 		document.getElementById('txt-desc-insta').innerHTML = descriptionInsta;
 		document.getElementById('txt-desc-in').innerHTML = descriptionIn;
-
 	}
 }
 
@@ -35,6 +37,11 @@ function readImage() {
 		file.onload = function (e) {
 			document.getElementById('prevImg').src = e.target.result;
 			document.getElementById('prevImg-in').src = e.target.result;
+			var photo = document.getElementById('prevImg-in').src;
+			console.log(photo)
+			var ph = JSON.stringify(photo);
+			sessionStorage.setItem('foto', ph);
+
 
 		};
 		file.readAsDataURL(this.files[0]);
@@ -44,5 +51,3 @@ function readImage() {
 document
 	.getElementById('file-select')
 	.addEventListener('change', readImage, false);
-
-
