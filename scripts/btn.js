@@ -105,7 +105,7 @@ function showPreview() {
 
 	document.getElementById('section1').style.display = 'none';
 	document.getElementById('footer').style.display = 'none';
-	document.getElementById('header').style.display = 'none';
+	document.getElementById('post-header').style.display = 'none';
 
 
 
