@@ -1,6 +1,6 @@
-// Function --- get content from the text area --- uploading preview-post-card
+// Func --- get content from the text area --- uploading preview-post-card
 
-//Instagram
+//Instagram - Linkedin
 getText();
 
 function getText() {
@@ -25,25 +25,9 @@ function getText() {
 	}
 }
 
-// //Linkedin
-// getText();
+// Func ------ get content from the image upload field ---- upload to preview-post-card
 
-// function getText() {
-// 	var description = document.getElementById('txt-desc-in').innerHTML;
-// 	var text = document.getElementById('textarea').value;
-
-// 	if (text != '') {
-// 		description = '<p>' + text + '</p>';
-// 		document.getElementById('txt-desc-in').innerHTML = description;
-// 	} else if (text == '') {
-// 		description = '<p>Aqui vai o texto descritivo desse post</p>';
-// 		document.getElementById('txt-desc-in').innerHTML = description;
-// 	}
-// }
-
-// Function ------ get content from the image upload field ---- upload to preview-post-card
-
-//Instagram
+//Instagram - Linkedin
 
 function readImage() {
 	if (this.files && this.files[0]) {
