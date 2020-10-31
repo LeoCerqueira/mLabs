@@ -91,3 +91,42 @@ function changeImg_1() {
 		document.getElementById('waiting').style.display = 'block';
 	}
 }
+
+
+// Screen behavior mobile - page-Scheduling
+
+function showPreview() {
+
+	
+
+	document.getElementById('section2').style.display = 'block';
+	document.getElementById('section2').style.position = 'fixed';
+	document.getElementById('section2').style.width = '92%';
+
+	document.getElementById('section1').style.display = 'none';
+	document.getElementById('footer').style.display = 'none';
+
+
+}
+
+// "Agendar" button behavior
+
+function submitData(){
+
+	instagram = document.getElementById('instaImg3').style.display;
+	linkedin = document.getElementById('inImg3').style.display;
+
+	date = document.getElementById('date').value;
+	time = document.getElementById('time').value;	
+
+	console.log(date)
+
+	 if((instagram == 'block' || linkedin == 'block' ) && date != '' && time != ''){
+		
+		document.getElementById('modal').style.display = 'flex';
+
+	 }else{
+		 alert('Esolha ao menos uma rede social, data e horário.')
+	 }
+		
+}

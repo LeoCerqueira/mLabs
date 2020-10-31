@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="./css/form-scheduling.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/mobile-scheduling.css" />
+		<link rel="stylesheet" href="./css/modal.css" />
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -37,10 +38,10 @@
 	</head>
 	<body>
 		<header>
-			<a href="./index.html"
+			<a href="./index.html" class="mLabs-icon"
 				><img src="./images/mlabs-color-2 1.svg" alt="mLabs"
 			/></a>
-			<a href="./index.html"
+			<a href="./scheduling.html"
 				><img class="menu-header" src="./images/menu.svg" alt="Menu"
 			/></a>
 			<div class="user">
@@ -50,6 +51,17 @@
 		</header>
 		<main>
 			<div class="container-main">
+				<div id="modal" class="modal">
+					<div class="modal-frame">
+						<img
+							src="./images/Emoticon.svg"
+							alt="Agendado com sucesso"
+						/>
+						<p>Agendado com sucesso</p>
+
+						<a class="btn modal-link" href="./schedule.html">OK</a>
+					</div>
+				</div>
 				<section id="section1">
 					<form action="">
 						<div class="fieldset">
@@ -184,7 +196,7 @@
 												Arraste e solte uma imagem aqui
 												ou clique no botão abaixo
 											</p>
-											
+
 											<label
 												class="btn-slim btn-blueWhite"
 												for="file-select"
@@ -199,8 +211,13 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn btn-orange">
-							<a href="">Vizualizar post</a>
+						<button
+							onclick="showPreview();"
+							type="button"
+							id="btn-orange"
+							class="btn btn-orange"
+						>
+							<a href="#">Vizualizar post</a>
 						</button>
 					</form>
 				</section>
@@ -213,7 +230,7 @@
 						</div>
 						<div class="preview-box">
 							<!-- Card-post instagram -->
-							 <div id="post-preview" class="post-preview">
+							<div id="post-preview" class="post-preview">
 								<div class="insta-preview">
 									<div class="preview-header">
 										<img
@@ -231,10 +248,19 @@
 									<div class="preview-footer">
 										<div>
 											<div>
-												<img src="./images/heart.svg" alt="Like" />
-												<img src="./images/comment.svg" alt="Cometário" />
+												<img
+													src="./images/heart.svg"
+													alt="Like"
+												/>
+												<img
+													src="./images/comment.svg"
+													alt="Cometário"
+												/>
 											</div>
-											<img src="./images/bookmark.svg" alt="Bookmark" />
+											<img
+												src="./images/bookmark.svg"
+												alt="Bookmark"
+											/>
 										</div>
 										<p id="txt-desc-insta">
 											Aqui vai o texto descritivo desse
@@ -259,8 +285,7 @@
 									</p>
 									<div class="preview-main">
 										<img
-											
-											id="prevImg-in"											
+											id="prevImg-in"
 											src="./images/post-preview.svg"
 											alt="Imagem do post"
 										/>
@@ -287,7 +312,7 @@
 								</div>
 							</div>
 							<!-- Card dafault -->
- 							<div id="waiting" class="waiting">
+							<div id="waiting" class="waiting">
 								<p>
 									Aguardando conteudo. Ifrome os canais e as
 									mídias desejadas para visualização.
@@ -296,21 +321,21 @@
 									src="/images/post-preview.svg"
 									alt="Vizualização do post"
 								/>
-							</div> 
+							</div>
 						</div>
 					</div>
 				</section>
 			</div>
 		</main>
-		<footer>
+		<footer id="footer">
 			<button class="noBorder-blue">
 				<a href="./index.html">Cancelar</a>
 			</button>
 			<button class="btn btn-blueGray">
-				<a href="">Salvar Rascunho</a>
+				<a href="#">Salvar Rascunho</a>
 			</button>
-			<button type="submit" class="btn btn-blue">
-				<a href="">Agendar</a>
+			<button onclick="submitData();" type="button" class="btn btn-blue">
+				<a href="#">Agendar</a>
 			</button>
 		</footer>
 		<script src="./scripts/btn.js"></script>

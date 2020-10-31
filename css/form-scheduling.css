@@ -1,4 +1,4 @@
-/* -----------------------------Tenplate----------------------- */
+/* -----------------------------Template----------------------- */
 
 .form-field {
 	background: #ffffff;
@@ -128,6 +128,11 @@ textarea {
 .post-view,
 .preview-box {
 	height: 100%;
+}
+
+.post-preview,
+.post-preview-in {
+	background: #ffffff;
 }
 
 .post-view p {

@@ -1,0 +1,41 @@
+.modal {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.185);
+}
+
+.modal-frame {
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: clamp(35rem, 50%, 87.2rem);
+	height: 41.9rem;
+	border-radius: 0.4rem;
+	padding: 2rem 0;
+}
+
+.btn.modal-link {
+	background: #2f80ed;
+	border: 0.1rem solid #2f80ed;
+
+	transition: 0.2s;
+	margin-right: 4rem;
+	margin-left: 1.6rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn.modal-link:hover {
+	background: #1d72e2;
+}

@@ -3,7 +3,7 @@ body header .menu-header {
 }
 
 @media (max-width: 600px) {
-	body header > a {
+	body header .mLabs-icon {
 		display: none;
 	}
 
