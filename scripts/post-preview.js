@@ -12,13 +12,12 @@ function getText() {
 	var comment = JSON.stringify(text);
 	sessionStorage.setItem('comentario', comment);
 
-
 	if (text != '') {
 		descriptionInsta = '<p>' + text + '</p>';
 		descriptionIn = '<p>' + text + '</p>';
 		document.getElementById('txt-desc-insta').innerHTML = descriptionInsta;
 		document.getElementById('txt-desc-in').innerHTML = descriptionIn;
-	} else if (text == "") {
+	} else if (text == '') {
 		descriptionIn = '<p>Aqui vai o texto descritivo desse post</p>';
 		descriptionInsta = '<p>Aqui vai o texto descritivo desse post</p>';
 
@@ -38,11 +37,9 @@ function readImage() {
 			document.getElementById('prevImg').src = e.target.result;
 			document.getElementById('prevImg-in').src = e.target.result;
 			var photo = document.getElementById('prevImg-in').src;
-			console.log(photo)
+			console.log(photo);
 			var ph = JSON.stringify(photo);
 			sessionStorage.setItem('foto', ph);
-
-
 		};
 		file.readAsDataURL(this.files[0]);
 	}

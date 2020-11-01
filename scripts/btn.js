@@ -82,7 +82,7 @@ function changeImg_1() {
 	}
 }
 
-// Screen behavior mobile - page-Scheduling
+// Screen behavior mobile - page-Scheduling - SHow preview button
 
 function showPreview() {
 	document.getElementById('section2').style.display = 'block';
@@ -96,16 +96,13 @@ function showPreview() {
 	document.getElementById('post-header').style.display = 'none';
 }
 
-// Menu button - mobile --- page-Scheduling
+// Menu button - mobile --- page-Scheduling button
 
-
-function backToScheduling(){
-
+function backToScheduling() {
 	document.getElementById('section1').style.display = 'block';
 	document.getElementById('section2').style.display = 'none';
 	document.getElementById('footer').style.display = 'flex';
 	document.getElementById('post-header').style.display = 'none';
-
 }
 
 // "Agendar" button behavior
