@@ -15,10 +15,7 @@ document.getElementById('sotialTableLn').style.margin = 'auto';
 
 document.getElementById('textTable').innerHTML = textTable;
 
-document.getElementById('dayTable').innerHTML = dayTable
-	.split('')
-	.reverse('')
-	.join('');
+document.getElementById('dayTable').innerHTML = dayTable;
 
 document.getElementById('timeTable').innerHTML = timeTable;
 
