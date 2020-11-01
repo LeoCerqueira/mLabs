@@ -10,4 +10,8 @@
 		width: 130rem;
 		align-self: flex-start;
 	}
+
+	.title {
+		margin-left: 4rem;
+	}
 }

@@ -96,6 +96,18 @@ function showPreview() {
 	document.getElementById('post-header').style.display = 'none';
 }
 
+// Menu button - mobile --- page-Scheduling
+
+
+function backToScheduling(){
+
+	document.getElementById('section1').style.display = 'block';
+	document.getElementById('section2').style.display = 'none';
+	document.getElementById('footer').style.display = 'flex';
+	document.getElementById('post-header').style.display = 'none';
+
+}
+
 // "Agendar" button behavior
 
 function submitData() {

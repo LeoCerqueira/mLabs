@@ -76,3 +76,112 @@ table td a {
 	z-index: 10;
 	background: rgba(0, 0, 0, 0.089);
 }
+
+.popup-insta,
+.popup-in {
+	width: 37.5rem;
+	height: 53rem;
+	overflow: hidden scroll;
+	background: #fff;
+	border: 0.1rem solid #bdbdbd;
+}
+
+#txt-table-insta,
+#txt-table-in {
+	margin-left: 2rem;
+	color: #4f4f4f;
+	overflow-wrap: normal;
+	padding: 1rem;
+	line-height: 1.3;
+}
+
+#prevImg,
+#prevImg-in {
+	width: 36.8rem;
+	height: 36.8rem;
+}
+
+/* Instagram popup */
+
+.insta-head-popup {
+	display: flex;
+
+	justify-content: left;
+	height: 8.2rem;
+	padding: 1rem;
+}
+
+.insta-head-popup span {
+	margin-left: 2rem;
+	margin-top: 2.5rem;
+}
+
+.insta-main-popup {
+	height: 36.8rem;
+	text-align: center;
+}
+
+.insta-footer-popup > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.insta-footer-popup img {
+	padding: 0 1rem;
+}
+
+/* Linkedin popup */
+
+.in-head-popup {
+	display: flex;
+
+	justify-content: left;
+	height: 6.2rem;
+	padding: 1rem;
+}
+
+.in-head-popup img {
+	margin-left: 1rem;
+}
+
+.in-head-popup span {
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+}
+
+.in-main-popup {
+	height: 36.8rem;
+	text-align: center;
+}
+
+.in-footer-popup p {
+	font-weight: 400;
+	font-size: 1.2rem;
+	align-self: center;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.in-footer-popup p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	text-align: initial;
+}
+
+.in-footer-popup > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 0 1rem;
+	height: 4rem;
+}
+
+.in-footer-popup img {
+	padding: 0 1.5rem 0 0;
+}

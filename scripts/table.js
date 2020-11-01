@@ -14,9 +14,42 @@ document.getElementById('sotialTableLn').style.display = sotialTableLn;
 document.getElementById('sotialTableLn').style.margin = 'auto';
 
 document.getElementById('textTable').innerHTML = textTable;
+document.getElementById('txt-table-in').innerHTML = textTable;
+document.getElementById('txt-table-insta').innerHTML = textTable;
+
+
 
 document.getElementById('dayTable').innerHTML = dayTable;
 
 document.getElementById('timeTable').innerHTML = timeTable;
 
 document.getElementById('photoTable').src = photoTable;
+document.getElementById('prevImg').src = photoTable;
+document.getElementById('prevImg-in').src = photoTable;
+
+// Preview button results 
+
+function popUp(){
+
+   var instaDisplay = document.getElementById('sotialTableIn').style.display;
+   var linkedinDisplay = document.getElementById('sotialTableLn').style.display;
+
+   if(linkedinDisplay == 'block'){
+
+    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('popup-insta').style.display = 'none';
+
+   }else{
+
+    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('popup-in').style.display = 'none';
+
+   }
+    
+}
+
+// Fucntion to close the popUp 
+
+function selfClose(){
+    document.getElementById('popup').style.display = 'none';
+}

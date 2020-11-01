@@ -27,7 +27,6 @@
 		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/page-scheduling.css" />
 		<link rel="stylesheet" href="./css/mobile-schedule.css" />
-		
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
@@ -36,8 +35,12 @@
 	</head>
 	<body>
 		<header>
-			<a href="./index.html"><img src="./images/mlabs-color-2 1.svg" alt="mLabs" /></a>
-			<a href="./index.html"></a><img class="menu-header" src="./images/menu.svg" alt="Menu" /></a>
+			<a href="./index.html" class="mLabs-icon"
+				><img src="./images/mlabs-color-2 1.svg" alt="mLabs"
+			/></a>
+			<a href="./index.html"
+				><img class="menu-header" src="./images/menu.svg" alt="Menu"
+			/></a>
 			<div class="user">
 				<img src="./images/Ellipse 1.svg" alt="User" />
 				<span>Léo Cerqueira</span>
@@ -57,30 +60,38 @@
 							</th>
 							<th>Ações</th>
 							<th>Status</th>
-						</tr>					
+						</tr>
 						<tr>
 							<td>
-								<img id="sotialTableIn"
+								<img
+									id="sotialTableIn"
 									src="./images/Button Instagram.svg"
 									alt="Instagram"
 								/>
-								<img id="sotialTableLn"
+								<img
+									id="sotialTableLn"
 									src="./images/Button Linkedin Table.svg"
 									alt="Linkedin"
 								/>
 							</td>
 							<td>
-								<img id="photoTable" 
+								<img
+									id="photoTable"
 									class="post"
 									src="./images/image table.svg"
 									alt="Post image"
 								/>
 							</td>
 							<td>
-								<p id="textTable">Aqui vai o texto descritivo desse post</p>
+								<p id="textTable">
+									Aqui vai o texto descritivo desse post
+								</p>
 							</td>
-							<td><span id="dayTable">02/02/1991</span> às <span id="timeTable">14:45h</span></td>
-							<td><a href="">Preview</a></td>
+							<td>
+								<span id="dayTable">02/02/1991</span> às
+								<span id="timeTable">14:45h</span>
+							</td>
+							<td><a onclick="popUp();" href="#">Preview</a></td>
 							<td>
 								<img
 									src="./images/agendado circle.svg"
@@ -91,16 +102,71 @@
 						</tr>
 					</tbody>
 				</table>
-				<div class="popup">
-					<div class="popup-table">
-						
-
+				<div onclick="selfClose();" id="popup"class="popup">
+					<div id="popup-insta" class="popup-insta">
+						<div class="insta-head-popup">
+							<img
+								src="./images/Instagram Logo Post.svg"
+								alt="Instagram"
+							/><span>Léo Cerqueira</span>
+						</div>
+						<div class="insta-main-popup">
+							<img
+								id="prevImg"
+								src="./images/post-preview.svg"
+								alt="Imagem do post"
+							/>
+						</div>
+						<div class="insta-footer-popup">
+							<div class="row-footer">
+								<div>
+									<img src="./images/heart.svg" alt="Like" />
+									<img
+										src="./images/comment.svg"
+										alt="Cometário"
+									/>
+								</div>
+								<img
+									src="./images/bookmark.svg"
+									alt="Bookmark"
+								/>
+							</div>
+							<p id="txt-table-insta">
+								Aqui vai o texto descritivo desse post
+							</p>
+						</div>
 					</div>
-					
-					
-				</div>				
+					<div id="popup-in" class="popup-in">
+						<div class="in-head-popup">
+							<img
+								src="./images/Linkedin Logo Post.svg"
+								alt="Instagram"
+							/><span>Léo Cerqueira</span>
+						</div>
+						<p id="txt-table-in" class="in">
+							Aqui vai o texto descritivo desse post 
+						</p>
+						<div class="in-main-popup">
+							<img
+								id="prevImg-in"
+								src="./images/post-preview.svg"
+								alt="Imagem do post"
+							/>
+						</div>
+						<div class="in-footer-popup">
+							<p>10 comentários</p>
+							<hr />
+							<div>
+								<img src="./images/legal.svg" alt="Like" />
+								<img src="./images/balao.svg" alt="Cometário" />
+
+								<img src="./images/voltar.svg" alt="Foward" />
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
-		<script src="./scripts/table.js"></script>
+		<script src="./scripts/table.js"></script>		
 	</body>
 </html>
