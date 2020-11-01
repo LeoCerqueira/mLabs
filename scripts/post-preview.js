@@ -18,7 +18,7 @@ function getText() {
 		descriptionIn = '<p>' + text + '</p>';
 		document.getElementById('txt-desc-insta').innerHTML = descriptionInsta;
 		document.getElementById('txt-desc-in').innerHTML = descriptionIn;
-	} else if (text == '') {
+	} else if (text == "") {
 		descriptionIn = '<p>Aqui vai o texto descritivo desse post</p>';
 		descriptionInsta = '<p>Aqui vai o texto descritivo desse post</p>';
 
