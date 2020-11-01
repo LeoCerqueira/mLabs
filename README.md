@@ -14,6 +14,10 @@ Este projeto foi desafiador por ter de ser feito em um curto período de tempo, 
 
 Para o desenvolvimento escolhi usar apenas HTML, CSS e Javascript. Entendi que essa seria uma solução enxuta na qual eu poderia me organizar bem. Me surpreendi ao encontrar trabalho denso no desenvolvimento do layout segundo os critérios, então estudei algumas propriedades do CSS. O ajuste que deu mais trabalho foi o de fazer com que o card do preview tivesse o scroll somente em uma direção e também que a sua mudança de tamanho não influenciasse no aumento da box, fazendo com que a página continuasse com um layout responsivo se adequando aos diferentes tamanhos de monitor.
 
+#### Melhorias - sugestão
+
+Esse app é fantástico! Pessoalmente mudaria somente a utilização do app com relação ao uso de formulários. Nós todos usamos ou temos que usar formulários, mesmo sendo algo que nem sempre é desejado, se tornando um momento de desconforto o de preencher várias informações em inputs. Então a longo prazo eu pensaria em desenvolver uma forma na qual o usurário preenchesse de forma dinâmica o formulário, em forma de pergunta, questão por questão, ou por voz, assim pouparia tempo e minimizaria a necessidade de um formulário convencional.
+
 #### Acesso
 
 Clique [aqui](https://quizzical-lewin-b8016a.netlify.app) para acessar o projeto
