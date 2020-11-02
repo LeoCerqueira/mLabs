@@ -79,8 +79,9 @@ table td a {
 
 .popup-insta,
 .popup-in {
+	margin-top: 4rem;
 	width: 37.5rem;
-	height: 53rem;
+	height: 58rem;
 	overflow: hidden scroll;
 	background: #fff;
 	border: 0.1rem solid #bdbdbd;
@@ -101,7 +102,7 @@ table td a {
 	height: 36.8rem;
 }
 
-/* Instagram popup */
+/*---------------------- Instagram popup ------------------------ */
 
 .insta-head-popup {
 	display: flex;
@@ -133,7 +134,7 @@ table td a {
 	padding: 0 1rem;
 }
 
-/* Linkedin popup */
+/* --------------------- Linkedin popup -------------------------- */
 
 .in-head-popup {
 	display: flex;
