@@ -59,4 +59,14 @@
 	footer .btn.btn-blue {
 		padding: 1.5rem;
 	}
+
+	.insta-preview,
+	.in-preview {
+		height: 58rem;
+	}
+
+	.post-preview,
+	.post-preview-in {
+		max-height: 58rem;
+	}
 }
