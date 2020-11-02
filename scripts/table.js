@@ -25,6 +25,7 @@ document.getElementById('photoTable').src = photoTable;
 document.getElementById('prevImg').src = photoTable;
 document.getElementById('prevImg-in').src = photoTable;
 
+
 // Preview button results
 
 function popUp() {

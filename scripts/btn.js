@@ -82,7 +82,8 @@ function changeImg_1() {
 	}
 }
 
-// Screen behavior mobile - page-Scheduling - SHow preview button
+
+  // Screen behavior mobile - page-Scheduling - SHow preview button
 
 function showPreview() {
 	document.getElementById('section2').style.display = 'block';
