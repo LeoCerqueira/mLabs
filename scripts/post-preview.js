@@ -31,6 +31,8 @@ function getText() {
 //Instagram - Linkedin
 
 function readImage() {
+	sessionStorage.removeItem('foto');
+
 	if (this.files && this.files[0]) {
 		var file = new FileReader();
 		file.onload = function (e) {

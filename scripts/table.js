@@ -46,3 +46,14 @@ function popUp() {
 function selfClose() {
 	document.getElementById('popup').style.display = 'none';
 }
+
+
+// Cleaning Session Storage 
+
+function cleanSession(){
+
+	sessionStorage.removeItem("foto");
+	
+
+}
+
