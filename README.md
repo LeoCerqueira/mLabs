@@ -20,7 +20,7 @@ Esse app é fantástico! Pessoalmente mudaria utilização do app com relação 
 
 Uma outra ideia seria implementar filtros e um tratamendo de imagem, também emoticons exclusivos pra postagem que vai ser agendada, pra que ela já vá com estas características. A tabela pode ter mais intens e talvez outro formato, provendo o usuário sobre informações como numero de curtidas dos postes passados, comentários destes posts, número de comentários, quais os usuários que comentaram, região de acesso, etc.
 
-Não foram usados nesse teste pré-processadores com o Webpack, Gulp, Less, Sass entre outros que ajudam muito o projeto ficar mais leve e mais organizado, ajudando no gerenciamento e debug dos códigos. A longo prazo o uso dessas ferramentas seria essencial para a performance das interfaces e para a qualidade do trabalho técnico.
+Não foram usados nesse teste pré-processadores com o Webpack, Gulp, Less, Sass entre outros que ajudam muito o projeto ficar mais leve e mais organizado, também no gerenciamento e debug dos códigos. A longo prazo o uso dessas ferramentas seria essencial para a performance das interfaces e para a qualidade do trabalho técnico.
 
 #### Acesso
 
